@@ -1,18 +1,126 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700');
+
+/*GENERAL STYLING*/
 html, body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: rgb(217, 211, 208);
 }
 
 .wrapper {
-  background-color: salmon;
+  background-color: #fff;
   margin: 0 auto;
   width: 85%;
   height: 100vh;
 }
 
+/*MENU*/
+
+header {
+  height: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.logo {
+  width: 120px;
+  height: 120px;
+  margin-left: 3%;
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+}
+
+button.hamburger {
+  display: none;
+}
+
+.hamburger:focus {
+  outline: 0;
+}
+
+/*large menu, large screen*/
+
+.largeMenu {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+  margin-right: 5%;
+  color: white;
+}
+
+.largeMenu li {
+  color: #000;
+  display: inline;
+  margin: 3%;
+  font-family: 'Roboto', sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+
 @media only screen and (max-width: 1024px) {
   .wrapper {
     width: 95%;
   }
+
+  button.hamburger {
+    display: inline-block;
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+    z-index: 10;
+
+  }
+
+  .largeMenu, .largeMenu li {
+    display: none;
+  }
+
+  /*SMALL MENU*/
+
+  .menuFromBurger {
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    background-color: salmon;
+    transition: all 300ms ease-in;
+    z-index: 1;
+  }
+
+  .menuShowOnClick {
+    height: 100vh;
+    width: 50%;
+    position: fixed;
+    right: 0;
+    overflow-x: hidden;
+  }
+
+  .smallHiddenMenu {
+    list-style: none;
+    margin-top: 35%;
+    margin-left: 20%;
+    top: 0;
+    left: 0;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+  }
+
+  .smallHiddenMenu li {
+    margin-bottom: 5%;
+  }
+
+
 }
