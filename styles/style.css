@@ -54,6 +54,17 @@ h1, h2, h3, h4, p {
   color: #fff;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 400px;
+  background-color: #000;
+  color: #fff;
+}
+
+
 /*MENU*/
 
 header {
@@ -130,6 +141,7 @@ button.hamburger {
 .aboutLanding,
 .projectsLanding,
 .passionLanding {
+  background-color: #fff;
   padding-left: 10%;
   padding-right: 10%;
   width: 100%;
@@ -139,7 +151,6 @@ button.hamburger {
 /*ABOUT PAGE*/
 
 .aboutLanding {
-  background-color: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
