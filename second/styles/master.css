@@ -248,7 +248,25 @@ header {
   margin: 20px 0 20px 2%;
   height: 270px;
   width: 270px;
+  transition: all 0.5s ease;
 }
+
+.projects-example:hover {
+  transform: scale(1.1);
+}
+
+.first:hover + .second,
+.first:hover ~ .third,
+.second:hover + .third,
+.second:hover .second
+ {
+  opacity: 0.8;
+}
+
+.black {
+  border: 1px solid black;
+}
+
 
 .projects-example img {
   height: 270px;
