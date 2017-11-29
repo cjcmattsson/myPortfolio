@@ -17,6 +17,13 @@
 
 
 /*GENERAL STYLING*/
+
+.box-test {
+  width: 200px;
+  height: 200px;
+  background-color: salmon;
+}
+
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;

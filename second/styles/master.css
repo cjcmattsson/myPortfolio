@@ -1,0 +1,224 @@
+/*General content*/
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+
+.content {
+  background-color: #eceaea;
+  padding: 10px;
+  width: calc(100vw-10px);
+  height: auto;
+}
+
+.wrapper {
+  position: relative;
+  background-color: #ececec;
+  height: auto;
+  width: 100%;
+  -webkit-box-shadow: 0px 0px 5px 3px rgba(217,217,217,1);
+  -moz-box-shadow: 0px 0px 5px 3px rgba(217,217,217,1);
+  box-shadow: 0px 0px 5px 3px rgba(217,217,217,1);
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  /*border-bottom: 1px solid black;*/
+}
+
+/*COLORS*/
+
+/*LIGHTEST BLUE #6AD5C0*/
+/*LIGHTER BLUE #40C1A8*/
+/*BASE #20B295*/
+/*DARKER BLUE #00A282*/
+/*DARKEST BLUE #007A62*/
+
+.lightest-blue {
+  background-color: #6AD5C0;
+}
+.lighter-blue {
+  background-color: #40C1A8;
+}
+.base {
+  background-color: #20B295;
+}
+.darker-blue {
+  background-color: #00A282;
+}
+.darkest-blue {
+  background-color: #007A62;
+}
+
+/*FRAME KOLLA PÅ SENARE*/
+
+/*.frameBox {
+  position: absolute;
+  z-index: 10;
+}
+
+.frame {
+  position: fixed;
+  z-index: 15;
+  margin: 0;
+  padding: 0;
+}
+
+.up {
+  margin: 0;
+  right: calc(50vw - 20px);
+  top: 20px;
+  transform-origin: top;
+}
+
+.right {
+  margin: 0;
+  top: calc(50vh + 45px);
+  right: 20px;
+  transform: rotate(90deg);
+  transform-origin: top right;
+}
+
+.left {
+  margin: 0;
+  top: calc(50vh + 45px);
+  left: 20px;
+  transform: rotate(270deg);
+  transform-origin: top left;
+}
+
+.bottom {
+  margin: 0;
+  right: calc(50vw - 10px);
+  bottom: 20px;
+  transform-origin: bottom;
+}*/
+
+
+/* TEXT */
+
+p {
+  margin: 0;
+  margin-top: 10px;
+  font-family: 'Karla', sans-serif;
+  font-size: 25px;
+}
+
+/*BOXES*/
+
+.small-box-front,
+.small-box-back,
+.large-box
+ {
+  position: absolute;
+}
+
+.small-box-back {
+  height: 400px;
+  width: 370px;
+  right: 150px;
+  top: 120px;
+  z-index: 5;
+}
+
+.small-box-front {
+  height: 400px;
+  width: 350px;
+  right: 0px;
+  top: calc(100vh - 400px);
+  z-index: 6;
+}
+
+.large-box {
+  position: absolute;
+  height: 370px;
+  width: 500px;
+  top: 620px;
+  left: 10px;
+  z-index: 10;
+}
+
+/*HERO SECTION*/
+
+/*HEADER*/
+
+header {
+  width: auto;
+  height: 200px;
+  padding-left: 35px;
+}
+
+.logo {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  top: 35px;
+}
+
+.name {
+  position: absolute;
+  color: #00A282;
+  font-family: 'Karla', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-left: 65px;
+  top: 90px;
+}
+
+/*HERO TEXT*/
+
+.hero-text {
+  position: absolute;
+  left: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.web-developer {
+  font-family: 'Karla', sans-serif;
+  font-size: 55px;
+  margin: 0;
+}
+
+.iphone {
+  position: absolute;
+  right: -200px;
+  top: 140px;
+  opacity: 0;
+  height: 500px;
+  width: 225px;
+  z-index: 10;
+  transition: all 1.5s ease;
+}
+
+.iphoneNew {
+  opacity: 1;
+  right: 200px;
+}
+
+/*PROJECTS SECTION*/
+
+.projects-text {
+  position: absolute;
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: right;
+  right: 100px;
+  width:
+}
+
+.projects-header {
+  font-family: 'Karla', sans-serif;
+  font-size: 45px;
+  margin: 0;
+}
