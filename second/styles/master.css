@@ -27,7 +27,6 @@ body {
 section {
   width: 100%;
   height: 100vh;
-  border-bottom: 1px solid black;
 }
 
 /*COLORS*/
@@ -239,34 +238,30 @@ header {
   flex-direction: row;
   justify-content: flex-end;
   align-items: center;
-  width: inherit;
+  width: auto;
   height: auto;
 }
 
 .projects-example {
   z-index: 5;
-  margin: 20px 0 20px 2%;
+  margin: 20px 0 0 2%;
   height: 270px;
   width: 270px;
   transition: all 0.5s ease;
 }
 
+/*Lower opacity and scale of all children*/
+.project-group:hover > * {
+  opacity: 0.85;
+  transform: scale(0.95);
+}
+
+/*... but the one im hovering*/
+
 .projects-example:hover {
   transform: scale(1.1);
+  opacity: 1;
 }
-
-.first:hover + .second,
-.first:hover ~ .third,
-.second:hover + .third,
-.second:hover .second
- {
-  opacity: 0.8;
-}
-
-.black {
-  border: 1px solid black;
-}
-
 
 .projects-example img {
   height: 270px;

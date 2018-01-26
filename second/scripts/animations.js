@@ -13,16 +13,21 @@ window.onload = phoneUp();
 
 // Lower opacity on hovered elements siblings
 
-// FRÅGA ELINA OM DETTA
-// SE CCS'sen också!!!
-
  const projectsExample = document.querySelectorAll('.projects-example');
  const first = document.querySelectorAll('.first');
 
- console.log(projectsExample);
+ // console.log(projectsExample);
 
 
 
-projectsExample.addEventListener('mouseover', function(event){
-    first.classList.add('black');
-  });
+
+//
+//   for (example of projectsExample) {
+//     example.addEventListener('mouseover', function(){
+//
+//       if (this.classList.contains('projects-example')) {
+//         example.style.opacity = "0.5";
+//         }
+// });
+
+      // example.not(this).style.opacity = "0.5";
