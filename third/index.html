@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/hamburgers.css">
   <link rel="stylesheet" href="assets/styles/main.css">
   <link rel="stylesheet" href="assets/styles/fonts.css">
   <title>Document</title>
 </head>
 <body>
-  <header>
+  <div class="sidebar">
     <!-- <nav>
     <ul>
     <li>About</li>
@@ -19,16 +20,23 @@
     <li>Contact</li>
   </ul>
 </nav> -->
-</header>
+</div>
+
+
+<button class="hamburger hamburger--spin" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+
 
 <div class="menuFromBurger">
-        <ul class="smallHiddenMenu">
-            <a href=".portfolio-page"> <li>About</li> </a>
-            <a href="#"> <li>Projects</li> </a>
-            <a href="#"> <li>Contact</li> </a>
-            <a href="#"> <li>Passion</li> </a>
-        </ul>
-      </div>
+  <h3>Talk to me!</h3>
+    <button class="contact-form-submit" type="submit">Post Message<i class="material-icons">send</i></button>
+  <div class="my-contact-info">
+
+  </div>
+</div>
 
 
 
@@ -55,15 +63,16 @@
   </div>
   <i class="material-icons scroll">keyboard_arrow_down</i>
 </div>
+
 <div class="behind-navbar">
-<nav>
-  <ul>
-    <li><a class="home-menu">Home</a></li>
-    <li><a class="portfolio-menu">Portfolio</a></li>
-    <li><a class="about-menu">About</a></li>
-    <li><a class="">Contact</a></li>
-  </ul>
-</nav>
+  <nav>
+    <ul>
+      <li class="menu-item"><a class="home-menu">Home</a></li>
+      <li class="menu-item"><a class="portfolio-menu">Portfolio</a></li>
+      <li class="menu-item"><a class="about-menu">About</a></li>
+      <li class="menu-item"><a class="contact-menu">Contact</a></li>
+    </ul>
+  </nav>
 </div>
 
 <div class="middle-section">

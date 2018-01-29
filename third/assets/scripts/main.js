@@ -3,7 +3,14 @@ const name = document.querySelector('h1');
 const middle = document.querySelector('.middle-section');
 const textLanding = document.querySelector('.text-content-landing');
 const contact = document.querySelector('.contact-button');
+const contactMenu = document.querySelector('.contact-menu');
 const menuShow = document.querySelector('.menuFromBurger');
+const hamburger = document.querySelector('.hamburger');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('is-active');
+  menuShow.classList.toggle('menuShowOnClick');
+})
 
 
 const homeMenu = document.querySelector('.home-menu');
@@ -40,6 +47,10 @@ aboutMenu.addEventListener('click', () => {
     behavior:"smooth",
     block:"start"
   });
+})
+
+contactMenu.addEventListener('click', () => {
+  menuShow.classList.toggle('menuShowOnClick');
 })
 
 contact.addEventListener('click', () => {
