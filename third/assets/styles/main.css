@@ -3,29 +3,38 @@ body {
   margin: 0;
 }
 
-nav {
-  width: 100vw;
-  height: 150px;
+.menuFromBurger {
+    padding-top: 15%;
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    background-color: black;
+    transition: all 300ms ease-in;
+    z-index: 1;
+  }
+
+  .menuShowOnClick {
+  height: 100vh;
+  width: 50%;
+  position: fixed;
+  right: 0;
+  overflow-x: hidden;
+  background-color: #000;
 }
 
-nav ul {
-  display: inline;
-  list-style: none;
-  padding: 0;
-}
-
-nav ul li {
-  display: inline;
-}
 
 .section {
   width: 100vw;
-  height: 105vh;
+  height: 100vh;
 }
 
 
 /* LANDING PAGE GENERAL */
 .landing-page {
+  height: 105vh;
   top: 0;
   left: 0;
   display: flex;
@@ -33,6 +42,7 @@ nav ul li {
   align-items: center;
   background-image: url("../../images/landing.jpg");
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
 }
 
@@ -55,6 +65,7 @@ hr {
 /* CONTENT LANDING */
 .text-content-landing {
   z-index: 10;
+  transition: all 0.7s ease-in-out;
 }
 
 .landing-page h1, .landing-page h2, .landing-page h3 {
@@ -157,6 +168,7 @@ h1:hover:after { transform: scaleX(1); } */
   bottom: 10px;
   left: 50%;
   font-size: 70px;
+  transition: all 0.5s ease-in;
   animation-name: scroll;
   animation-direction: alternate;
   animation-iteration-count: infinite;
@@ -207,6 +219,46 @@ h1:hover:after { transform: scaleX(1); } */
   }
 }
 
+.hide-landing {
+  opacity: 0;
+  transform: translateY(-60px);
+  pointer-events: none;
+}
+
+nav {
+  overflow: hidden;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 60px;
+}
+
+nav ul {
+  display: inline;
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 40px;
+}
+
+nav ul li:hover {
+  cursor: pointer;
+}
+
+.behind-navbar {
+  height: 60px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
 
 .middle-section {
   width: 100vw;
