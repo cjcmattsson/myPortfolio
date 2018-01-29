@@ -23,11 +23,11 @@ nav ul li {
   height: 105vh;
 }
 
+
 /* LANDING PAGE GENERAL */
 .landing-page {
   top: 0;
   left: 0;
-  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,6 +78,17 @@ hr {
   font-size: 25px;
 }
 
+/* COOL GREJ! */
+/* h1:after {
+display:block;
+content: '';
+border-bottom: solid 3px white;
+transform: scaleX(0);
+transition: transform 250ms ease-in-out;
+}
+
+h1:hover:after { transform: scaleX(1); } */
+
 .contact-social {
   height: auto;
   width: auto;
@@ -113,7 +124,6 @@ hr {
 .contact-button:active {
   color: white;
   background-color: black;
-  border: 2px solid white;
 }
 
 .contact-button:hover {
@@ -137,6 +147,30 @@ hr {
 
 .icon:hover {
   transform: scale(1.1);
+}
+
+
+.scroll {
+  position: absolute;
+  z-index: 20;
+  color: white;
+  bottom: 10px;
+  left: 50%;
+  font-size: 70px;
+  animation-name: scroll;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-duration: 0.5s;
+}
+
+
+@keyframes scroll {
+  0% {
+    transform: translate(-50%, 0px);
+  }
+  100% {
+    transform: translate(-50%, 8px);
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -171,4 +205,24 @@ hr {
   .landing-page h3 {
     font-size: 20px;
   }
+}
+
+
+.middle-section {
+  width: 100vw;
+  height: 50vh;
+  background-color: black;
+}
+
+.middle-section-text{
+  box-sizing: border-box;
+  padding: 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50vw;
+  margin: 0;
+  color: white;
+  font-style: italic;
 }
