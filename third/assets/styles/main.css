@@ -14,11 +14,18 @@ body {
   outline: none;
 }
 
+.menuFromBurger h2{
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+}
+
 
 .menuFromBurger {
-  padding-top: 100px;
+
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
   flex-flow: column;
   color: white;
@@ -34,6 +41,10 @@ body {
 }
 
 .menuShowOnClick {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: column;
   height: 100vh;
   left: 0;
   overflow-x: hidden;
@@ -65,7 +76,7 @@ body {
   top: 0;
   left: 0;
   position: absolute;
-  background-color: rgba(23, 154, 210, 0.77);
+  background-color: rgba(23, 154, 210, 0.94);
   height: 105vh;
   width: 100vw;
 }
@@ -289,6 +300,8 @@ nav ul li:hover {
 }
 
 .middle-section {
+  display: flex;
+  flex-flow: row;
   width: 100vw;
   height: 50vh;
   background-color: black;
@@ -305,4 +318,21 @@ nav ul li:hover {
   margin: 0;
   color: white;
   font-style: italic;
+}
+
+.middle-section-icons {
+  box-sizing: border-box;
+  padding: 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 50vw;
+  margin: 0;
+  color: white;
+  font-style: italic;
+}
+
+.portfolio-page {
+  background-color: rgb(6, 221, 155);
 }

@@ -40,12 +40,16 @@ homeMenu.addEventListener('click', () => {
 });
 
 portfolioMenu.addEventListener('click', () => {
+  menuShow.classList.toggle('menuShowOnClick');
+  hamburger.classList.remove('is-active');
   portfolio.scrollIntoView({
     behavior:"smooth",
     block:"start"
   });
 })
 aboutMenu.addEventListener('click', () => {
+  menuShow.classList.toggle('menuShowOnClick');
+  hamburger.classList.remove('is-active');
   about.scrollIntoView({
     behavior:"smooth",
     block:"start"
