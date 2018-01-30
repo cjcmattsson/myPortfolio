@@ -40,44 +40,6 @@ body {
 }
 
 
-
-.contact-form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-}
-
-.contact-form label, .contact-form h3 {
-  color: white;
-  margin: 20px 0 10px 0;
-}
-
-.contact-form input {
-  height: 30px;
-  width: 30vw;
-}
-
-
-.contact-form-submit {
-  margin-top: 100px;
-  z-index: 10;
-  font-size: 20px;
-  font-weight: bold;
-  border: 2px solid black;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 50px;
-  width: 200px;
-  background-color: white;
-  text-decoration: none;
-  -webkit-box-shadow: 4px 4px 0px 0px white;
-  -moz-box-shadow: 4px 4px 0px 0px white;
-  box-shadow: 4px 4px 0px 0px white;
-  transition: all 0.2s ease;
-}
-
 .section {
   width: 100vw;
   height: 100vh;
@@ -151,7 +113,8 @@ hr {
   align-items: center;
 }
 
-.contact-button {
+.button {
+  color: black;
   margin-top: 20px;
   z-index: 10;
   font-size: 20px;
@@ -175,16 +138,16 @@ hr {
   height: 100vh;
 }
 
-.contact-button:visited {
+.button:visited {
   color: black;
 }
 
-.contact-button:active {
+.button:active {
   color: white;
   background-color: black;
 }
 
-.contact-button:hover {
+.button:hover {
   transform: translateY(2px);
   -webkit-box-shadow: 0.5px 0.5px 0px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 0.5px 0.5px 0px 0px rgba(0,0,0,0.75);
@@ -280,18 +243,16 @@ hr {
 
 nav {
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 1);
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
-  height: 60px;
+  width: auto;
 }
 
 nav ul {
   display: flex;
-  flex-flow: row;
+  flex-flow: column;
   list-style: none;
   padding: 0;
 }

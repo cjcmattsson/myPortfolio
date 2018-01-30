@@ -2,7 +2,7 @@ const scroll = document.querySelector('.scroll');
 const name = document.querySelector('h1');
 const middle = document.querySelector('.middle-section');
 const textLanding = document.querySelector('.text-content-landing');
-const contact = document.querySelector('.contact-button');
+const contact = document.querySelector('.button');
 const contactMenu = document.querySelector('.contact-menu');
 const menuShow = document.querySelector('.menuFromBurger');
 const hamburger = document.querySelector('.hamburger');
@@ -31,11 +31,14 @@ scroll.addEventListener('click', () => {
 })
 
 homeMenu.addEventListener('click', () => {
+  menuShow.classList.toggle('menuShowOnClick');
+  hamburger.classList.remove('is-active');
   home.scrollIntoView({
     behavior:"smooth",
     block:"start"
   });
-})
+});
+
 portfolioMenu.addEventListener('click', () => {
   portfolio.scrollIntoView({
     behavior:"smooth",
@@ -49,26 +52,8 @@ aboutMenu.addEventListener('click', () => {
   });
 })
 
-contactMenu.addEventListener('click', () => {
-  menuShow.classList.toggle('menuShowOnClick');
-})
-
-contact.addEventListener('click', () => {
-  menuShow.classList.toggle('menuShowOnClick');
-})
-
 const navbar = document.querySelector("nav");
 const sticky = navbar.offsetTop;
-
-function stickyNavbar() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
-
-window.onscroll = function() {stickyNavbar()};
 
 window.addEventListener('scroll', function() {
 
