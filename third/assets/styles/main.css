@@ -14,16 +14,7 @@ body {
   outline: none;
 }
 
-.menuFromBurger h2{
-  font-size: 35px;
-  color: white;
-  text-align: center;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
-}
-
-
 .menuFromBurger {
-
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -34,10 +25,18 @@ body {
   position: fixed;
   top: 0;
   left: -100vw;
+  border-right: 5px solid black;
   overflow-x: hidden;
-  background-color: #4958E5;
+  background-color: rgba(0, 0, 0, 0.83);
   transition: all 300ms ease-in;
   z-index: 1000;
+}
+
+.menuFromBurger h2{
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 0px rgb(110, 48, 209);
 }
 
 .menuShowOnClick {
@@ -50,12 +49,40 @@ body {
   overflow-x: hidden;
 }
 
-
-.section {
-  width: 100vw;
-  height: 100vh;
+.button {
+  color: black;
+  margin-top: 20px;
+  z-index: 10;
+  font-size: 20px;
+  font-weight: bold;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 200px;
+  background-color: white;
+  text-decoration: none;
+  -webkit-box-shadow: 4px 4px 0px 0px rgb(110, 48, 209);
+  -moz-box-shadow: 4px 4px 0px 0px rgb(110, 48, 209);
+  box-shadow: 4px 4px 0px 0px rgb(110, 48, 209);
+  transition: all 0.3s ease;
 }
 
+.button:hover {
+  transform: translateY(2px);
+  -webkit-box-shadow: 2px 2px 0px 0px rgb(110, 48, 209);
+  -moz-box-shadow: 2px 2px 0px 0px rgb(110, 48, 209);
+  box-shadow: 2px 2px 0px 0px rgb(110, 48, 209);
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: white;
+}
+.button:focus {
+  background-color: white;
+}
 
 /* LANDING PAGE GENERAL */
 .landing-page {
@@ -76,7 +103,7 @@ body {
   top: 0;
   left: 0;
   position: absolute;
-  background-color: rgba(23, 154, 210, 0.94);
+  background-color: rgba(72, 87, 230, 0.95);
   height: 105vh;
   width: 100vw;
 }
@@ -124,46 +151,9 @@ hr {
   align-items: center;
 }
 
-.button {
-  color: black;
-  margin-top: 20px;
-  z-index: 10;
-  font-size: 20px;
-  font-weight: bold;
-  border: 2px solid black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  width: 200px;
-  background-color: white;
-  text-decoration: none;
-  -webkit-box-shadow: 4px 4px 0px 0px #000;
-  -moz-box-shadow: 4px 4px 0px 0px #000;
-  box-shadow: 4px 4px 0px 0px #000;
-  transition: all 0.2s ease;
-}
-
 .full-screen {
   width: 100vw;
   height: 100vh;
-}
-
-.button:visited {
-  color: black;
-}
-
-.button:active {
-  color: white;
-  background-color: black;
-}
-
-.button:hover {
-  transform: translateY(2px);
-  -webkit-box-shadow: 0.5px 0.5px 0px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0.5px 0.5px 0px 0px rgba(0,0,0,0.75);
-  box-shadow: 0.5px 0.5px 0px 0px rgba(0,0,0,0.75);
-  cursor: pointer;
 }
 
 .social-icons {
@@ -214,34 +204,35 @@ hr {
 @media only screen and (max-width: 450px) {
 
   .landing-page {
-    justify
+    justify-content: space-around;
   }
 
   .landing-page h1 {
-    font-size: 30px;
+    font-size: 45px;
   }
 
   .landing-page h2 {
-    font-size: 25px;
+    font-size: 30px;
   }
 
   .landing-page h3 {
-    font-size: 15px;
+    font-size: 25px;
   }
 }
 
 @media only screen and (min-width: 451px) and (max-width: 1000px) {
 
+
   .landing-page h1 {
-    font-size: 40px;
+    font-size: 50px;
   }
 
   .landing-page h2 {
-    font-size: 30px;
+    font-size: 35px;
   }
 
   .landing-page h3 {
-    font-size: 20px;
+    font-size: 30px;
   }
 }
 
@@ -299,40 +290,94 @@ nav ul li:hover {
   width: 100%
 }
 
-.middle-section {
-  display: flex;
-  flex-flow: row;
-  width: 100vw;
-  height: 50vh;
-  background-color: black;
-}
-
-.middle-section-text{
-  box-sizing: border-box;
-  padding: 0 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 50vw;
+.page-break {
   margin: 0;
-  color: white;
-  font-style: italic;
+  min-width: 100%;
+  border: 2px solid white
 }
 
-.middle-section-icons {
-  box-sizing: border-box;
-  padding: 0 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 50vw;
-  margin: 0;
-  color: white;
-  font-style: italic;
-}
-
+/* PROFTOLIO PAGE */
 .portfolio-page {
-  background-color: rgb(6, 221, 155);
+  height: auto;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  background-color: #e54958;
+}
+
+.portfolio-page h2 {
+  font-size: 50px;
+  margin: 25px;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+}
+
+.sample-work {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: wrap;
+  max-width: 80vw;
+  height: auto;
+  min-height: 500px;
+  border: 1px solid white;
+  margin-bottom: 40px;
+  padding: 20px 20px 10px 20px;
+}
+
+.project {
+  width: 300px;
+  height: 200px;
+  background-color: black;
+  -webkit-box-shadow: 7px 7px 0px 0px #fff;
+  -moz-box-shadow: 7px 7px 0px 0px #fff;
+  box-shadow: 7px 7px 0px 0px #fff;
+  margin: 10px;
+  margin-bottom: 25px;
+  transition: all 0.2s ease-in-out;
+}
+
+.project:hover {
+  transform: translateY(3px);
+  -webkit-box-shadow: 2px 2px 0px 0px #fff;
+  -moz-box-shadow: 2px 2px 0px 0px #fff;
+  box-shadow: 2px 2px 0px 0px #fff;
+}
+
+@media only screen and (min-width: 450px) {
+  .project {
+    width: 450px;
+    height: 250px;
+    background-color: black;
+    -webkit-box-shadow: 7px 7px 0px 0px #fff;
+    -moz-box-shadow: 7px 7px 0px 0px #fff;
+    box-shadow: 7px 7px 0px 0px #fff;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .project {
+    width: 300px;
+    height: 220px;
+    background-color: black;
+    -webkit-box-shadow: 7px 7px 0px 0px #fff;
+    -moz-box-shadow: 7px 7px 0px 0px #fff;
+    box-shadow: 7px 7px 0px 0px #fff;
+  }
+}
+
+.other-projects {
+  color: white;
+}
+
+
+/* ABOUT PAGE */
+
+.about-page {
+  height: 110vh;
+  width: 100vw;
+  background-color: #e5d649;
 }
