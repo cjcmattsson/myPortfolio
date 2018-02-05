@@ -292,7 +292,7 @@ nav ul li:hover {
 
 .page-break {
   margin: 0;
-  min-width: 100%;
+  width: 100%;
   border: 2px solid white
 }
 
@@ -307,7 +307,7 @@ nav ul li:hover {
   background-color: #e54958;
 }
 
-.portfolio-page h2 {
+.sub-section h2 {
   font-size: 50px;
   margin: 25px;
   color: white;
@@ -377,7 +377,37 @@ nav ul li:hover {
 /* ABOUT PAGE */
 
 .about-page {
-  height: 110vh;
+  height: 100vh;
   width: 100vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-flow: column;
   background-color: #e5d649;
+}
+
+.about-content {
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-me, .about-skills {
+  flex: 1;
+}
+
+.cloud-skills {
+  height: 350px;
+  width: 350px;
+}
+
+/* FOOTER */
+
+footer {
+  width: 100vw;
+  height: 50vh;
+  background-color: black;
 }
