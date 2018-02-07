@@ -9,5 +9,13 @@ html {
 }
 
 h2 {
+  font-family: sans-serif;
+}
+
+.landing-page h2 {
+  font-family: 'Pacifico', cursive;
+}
+
+.menuFromBurger h2 {
   font-family: 'Pacifico', cursive;
 }
