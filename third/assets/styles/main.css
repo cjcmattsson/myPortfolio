@@ -28,7 +28,7 @@ body {
   position: fixed;
   top: 0;
   left: -100vw;
-  border-right: 5px solid rgba(72, 87, 230, 1);
+  border-right: 5px solid black;
   overflow-x: hidden;
   background-color: rgba(0, 0, 0, 1);
   transition: all 300ms ease-in;
@@ -98,6 +98,9 @@ body {
   color: white;
 }
 
+h5 {
+  margin: 0;
+}
 /* LANDING PAGE GENERAL */
 .landing-page {
   height: 110vh;
@@ -126,6 +129,13 @@ hr {
   border: 2px solid white;
   background-color: white;
   max-width: 60vw;
+}
+
+hr.black {
+  background-color: black;
+  max-width: 60vw;
+  min-width: 40vw;
+  border: 2px solid black;
 }
 
 /* CONTENT LANDING */
@@ -280,11 +290,6 @@ nav ul li:hover {
   cursor: pointer;
 }
 
-.page-break {
-  margin: 0;
-  border: 2px solid white
-}
-
 .page-bridge {
   display: flex;
   justify-content: center;
@@ -292,9 +297,9 @@ nav ul li:hover {
   flex-direction: column;
   text-align: center;
   background-color: white;
-  height: 45vh;
+  height: auto;
   width: 100%;
-  padding: 0 5%;
+  padding: 20px 5%;
 }
 
 .sub-section h2 {
@@ -306,10 +311,17 @@ nav ul li:hover {
 /* PROFTOLIO PAGE */
 
 .icons {
+  height: 150px;
   width: inherit;
   justify-content: center;
   display: flex;
   flex-direction: row;
+}
+
+.icon-container {
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .work-flow {
@@ -317,6 +329,7 @@ nav ul li:hover {
   height: 80px;
   width: 80px;
   margin: 10px;
+  margin-bottom: 0;
 }
 
 .portfolio-page {
@@ -329,6 +342,13 @@ nav ul li:hover {
   flex-flow: column;
 }
 
+.portfolio-page h3 {
+  margin-bottom: 10px;
+  margin-top: 40px;
+  font-size: 30px;
+  border-bottom: 2px solid black;
+}
+
 .sample-work {
   display: flex;
   justify-content: space-around;
@@ -337,8 +357,7 @@ nav ul li:hover {
   max-width: 80vw;
   height: auto;
   min-height: 500px;
-  margin-top: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   padding: 20px 20px 10px 20px;
 }
 
@@ -478,6 +497,13 @@ nav ul li:hover {
   background-color: #F5F5F5;
 }
 
+.about-page h3 {
+  margin-bottom: 10px;
+  margin-top: 40px;
+  font-size: 30px;
+  border-bottom: 2px solid black;
+}
+
 .about-content {
   display: flex;
   justify-content: space-around;
@@ -498,9 +524,10 @@ nav ul li:hover {
   align-items: center;
   flex-direction: column;
   width: 40vw;
+  height: 70vh;
   text-align: center;
 }
-.about-me h4 {
+.about-me h4, .about-skills h4 {
   margin: 0;
   margin-top: 20px;
   font-size: 30px;
@@ -518,13 +545,6 @@ nav ul li:hover {
   border: 5px solid white;
   height: inherit;
   width: inherit;
-}
-
-.about-page h3 {
-  margin: 0;
-  color: white;
-  font-size: 30px;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
 }
 
 .skills {
@@ -583,7 +603,8 @@ nav ul li:hover {
   background-color: rgba(72, 87, 230, 1);
 }
 
-.skill-level h4 {
+.skill-name {
+  color: white;
   margin: 0;
 }
 
