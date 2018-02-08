@@ -6,11 +6,28 @@ body {
   box-sizing: border-box;
 }
 
+.menu-container {
+  border: 2px solid white;
+  height: 44px;
+  width: 51px;
+  background-color: rgb(32, 32, 32);
+  top: 16px;
+  left: 16px;
+  position: fixed;
+  z-index: 10001;
+  box-shadow: 2.5px 2.5px 0px black;
+}
+
 .hamburger {
-  top: 20px;
-  left: 10px;
+  top: 25px;
+  left: 17.2px;
   position: fixed;
   z-index: 10000;
+  transition: all 0.2s ease-in-out;
+}
+
+.menu-container:hover .hamburger {
+  transform: scale(1.08);
 }
 
 .hamburger:focus, .hamburger:active {
@@ -400,6 +417,10 @@ nav ul li:hover {
   font-size: 15px;
 }
 
+.very-small {
+  font-size: 10px;
+}
+
 /* Black&White */
 .project.one {background-image: url(../../images/face.jpg);}
 .project.two {background-image: url(../../images/thrive.png);}
@@ -459,14 +480,14 @@ nav ul li:hover {
     height: 250px;
   }
 }
-@media only screen and (min-width: 451px) and (max-width: 1000px) {
+@media only screen and (min-width: 864px) and (max-width: 1100px) {
   .project {
     width: 300px;
     height: 200px;
   }
 }
 
-@media only screen and (min-width: 580px) and (max-width: 800px) {
+@media only screen and (min-width: 580px) and (max-width: 863px) {
   .project {
     width: 400px;
     height: 250px;
@@ -509,22 +530,25 @@ nav ul li:hover {
   justify-content: space-around;
   align-items: center;
   flex-flow: row;
-  max-width: 80vw;
+  max-width: 100vw;
   height: auto;
   min-height: 500px;
-  margin-top: 50px;
-  margin-bottom: 40px;
-  padding: 20px 20px 10px 20px;
 }
 
 
+.about-me {
+  border-right: 3px solid black;
+}
+
 .about-me, .about-skills {
+  padding-top: 25px;
+  padding-bottom: 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  width: 40vw;
-  height: 70vh;
+  width: 50vw;
+  height: 80vh;
   text-align: center;
 }
 .about-me h4, .about-skills h4 {
@@ -637,8 +661,10 @@ nav ul li:hover {
   }
 
 .about-me {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
   padding: 25px;
+  border-right: 0;
+  border-bottom: 1px solid black;
 }
 
 
@@ -646,8 +672,31 @@ nav ul li:hover {
 /* FOOTER */
 
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   color: white;
   width: 100%;
   height: 50vh;
   background-color: black;
+  padding: 50px;
+}
+
+.footer-left, .footer-center, .footer-right {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 33%;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-left p, .footer-center p, .footer-right p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  text-align: left;
 }

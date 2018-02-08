@@ -31,20 +31,14 @@
   top: 50%;
   margin-top: -2px; }
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-    width: 40px;
+    width: 35px;
     height: 4px;
     background-color: white;
     border-radius: 4px;
     position: absolute;
     transition-property: transform;
     transition-duration: 0.15s;
-    -webkit-box-shadow: 1px 1px 0px 0px #000;
-    -moz-box-shadow: 1px 1px 0px 0px #000;
-    box-shadow: 1px 1px 1px 0px #000;
     transition-timing-function: ease; }
-    .hamburger-inner {
-      width: 35px;
-    }
   .hamburger-inner::before, .hamburger-inner::after {
     content: "";
     display: block; }
