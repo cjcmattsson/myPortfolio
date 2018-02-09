@@ -52,12 +52,15 @@ body {
   z-index: 1000;
 }
 
+.menuFromBurger a {
+  text-decoration: none;
+}
+
 .menuFromBurger h2{
   font-size: 45px;
   color: white;
   margin-bottom: 0;
   text-align: center;
-
 }
 
 .menuShowOnClick {
@@ -504,6 +507,12 @@ nav ul li:hover {
 .other-projects {
   margin-bottom: 50px;
 }
+
+.button-link-other {
+  height: 50px;
+  width: 200px;
+}
+
 
 
 /* ABOUT PAGE */

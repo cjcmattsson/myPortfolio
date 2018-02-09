@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="assets/styles/hamburgers.css">
   <link rel="stylesheet" href="assets/styles/main.css">
   <link rel="stylesheet" href="assets/styles/fonts.css">
+  <link rel="stylesheet" href="assets/styles/loading.css">
   <title>Document</title>
 </head>
 <body>
@@ -26,8 +27,9 @@
       <h2>Howdy Ho!</h2>
       <ul>
         <a class="home-menu"><li class="button">Home</li></a>
-        <a class="portfolio-menu"><li class="button">Portfolio</li></a>
+        <a class="work-menu"><li class="button">Work</li></a>
         <a class="about-menu"><li class="button">About</li></a>
+        <a href="projects/portfolio.html" class="work-menu"><li class="button">Portfolio</li></a>
 
       </ul>
     </nav>
@@ -38,7 +40,9 @@
 
     </div>
   </div>
-
+  <div class="loading-page">
+    <div class="loader"></div>
+  </div>
 
 
   <div id="home" class="landing-page">
@@ -65,7 +69,7 @@
     <i class="material-icons scroll">keyboard_arrow_down</i>
   </div>
 
-  <div id="portfolio" class="portfolio-page sub-section">
+  <div id="work" class="portfolio-page sub-section">
     <div class="page-bridge">
     <h2>Stuff I Do</h2>
     <p>Hey peeps, I like to create cool stuff. Have a look down below, see if there is anything you like
@@ -106,7 +110,7 @@
         </div>
       </div>
     </div>
-    <h4 class="button other-projects">More Stuff</h4>
+    <a href="projects/portfolio.html" class="button other-projects">More Stuff</a>
 
   </div>
 
@@ -226,5 +230,6 @@
   </footer>
 
   <script type="text/javascript" src="assets/scripts/main.js"></script>
+  <script type="text/javascript" src="assets/scripts/loading.js"></script>
 </body>
 </html>

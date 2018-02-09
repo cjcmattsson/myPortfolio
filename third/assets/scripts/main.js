@@ -13,17 +13,17 @@ hamburger.addEventListener('click', () => {
 
 
 const homeMenu = document.querySelector('.home-menu');
-const portfolioMenu = document.querySelector('.portfolio-menu');
+const workMenu = document.querySelector('.work-menu');
 const aboutMenu = document.querySelector('.about-menu');
 
 const home = document.querySelector('#home');
-const portfolio = document.querySelector('#portfolio');
+const work = document.querySelector('#work');
 const about = document.querySelector('#about');
 
 console.log(window.scrollY);
 
 scroll.addEventListener('click', () => {
-  portfolio.scrollIntoView({
+  work.scrollIntoView({
     behavior:"smooth",
     block:"start"
   });
@@ -38,10 +38,10 @@ homeMenu.addEventListener('click', () => {
   });
 });
 
-portfolioMenu.addEventListener('click', () => {
+workMenu.addEventListener('click', () => {
   menuShow.classList.toggle('menuShowOnClick');
   hamburger.classList.remove('is-active');
-  portfolio.scrollIntoView({
+  work.scrollIntoView({
     behavior:"smooth",
     block:"start"
   });
@@ -60,7 +60,7 @@ const sticky = navbar.offsetTop;
 
 window.addEventListener('scroll', function() {
 
-  const top = portfolio.getBoundingClientRect().top;
+  const top = work.getBoundingClientRect().top;
   console.log(top);
 
   if (top <= 430 && !textLanding.classList.contains('hide-landing')) {
