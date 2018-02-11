@@ -8,22 +8,22 @@ function startLoading() {
     body.classList.remove('no-scroll');
     loadingPage.classList.add('hide-loading');
     loader.classList.add('hide-loading');
-  }, 1500);
+  }, 3200);
   setTimeout(() => {
     loadingPage.classList.add('remove-loading');
     loader.classList.add('remove-loading');
-  }, 1800);
+  }, 3500);
 }
 
 // If user visits page for first time/after closed a window, execute loadingPage
 // If user reloads page, dont do loadingPage
-if (sessionStorage.getItem('key') === 'firstVisit') {
-  loadingPage.classList.add('remove-loading');
-  loader.classList.add('remove-loading');
-  console.log("hej");
-} else {
-  window.onload = startLoading;
-}
+// if (sessionStorage.getItem('key') === 'firstVisit') {
+//   loadingPage.classList.add('remove-loading');
+//   loader.classList.add('remove-loading');
+//   console.log("hej");
+// } else {
+//   window.onload = startLoading;
+// }
 
 sessionStorage.setItem('key', 'firstVisit');
 window.onbeforeunload = function(){ window.scrollTo(0,0); }
