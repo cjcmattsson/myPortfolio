@@ -310,6 +310,12 @@ nav ul li:hover {
   cursor: pointer;
 }
 
+.sub-section h2, .page-bridge h2 {
+  font-size: 50px;
+  margin: 15px;
+  color: black;
+}
+
 .page-bridge {
   display: flex;
   justify-content: center;
@@ -322,16 +328,20 @@ nav ul li:hover {
   padding: 20px 5%;
 }
 
-.sub-section h2 {
-  font-size: 50px;
-  margin: 15px;
-  color: black;
+.page-bridge p {
+  font-size: 17px;
 }
 
-/* PROFTOLIO PAGE */
+@media only screen and (max-width: 550px) {
+  .page-bridge p {
+    font-size: 14px;
+  }
+}
+
+/* Projects PAGE */
 
 .icons {
-  height: 150px;
+  height: 130px;
   width: inherit;
   justify-content: center;
   display: flex;
@@ -351,6 +361,19 @@ nav ul li:hover {
   margin: 10px;
   margin-bottom: 0;
 }
+
+@media only screen and (max-width: 550px) {
+  .work-flow {
+    font-size: 60px;
+    height: 60px;
+    width: 60px;
+  }
+
+  .icons {
+    height: 100px;
+  }
+}
+
 
 .portfolio-page {
   background-color: #F5F5F5;
@@ -475,8 +498,6 @@ nav ul li:hover {
   color: white;
 }
 
-
-
 @media only screen and (min-width: 1480px)  {
   .project {
     width: 500px;
@@ -502,7 +523,30 @@ nav ul li:hover {
     width: 300px;
     height: 220px;
   }
+
+  .read-more {
+    cursor: pointer;
+    border: 3px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    height: 40px;
+    width: 140px;
+    background-color: white;
+    color: black;
+    transition: all 0.2s ease-in-out;
+    transform: translateY(80px);
+    opacity: 0;
+    z-index: 10;
+  }
+
+  .project:hover .read-more {
+    transform: translateY(60px);
+    opacity: 1;
+  }
 }
+
 
 .other-projects {
   margin-bottom: 50px;
@@ -556,7 +600,7 @@ nav ul li:hover {
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  width: 50vw;
+  width: 49vw;
   height: 80vh;
   text-align: center;
 }
@@ -693,6 +737,7 @@ footer {
 }
 
 .footer-left, .footer-center, .footer-right {
+  box-sizing: border-box;
   padding: 25px;
   display: flex;
   align-items: center;

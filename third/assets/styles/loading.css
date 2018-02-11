@@ -1,9 +1,10 @@
 /* LOADER WHEN ENTERING PAGE */
 .loading-page {
+  box-sizing: border-box;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   position: absolute;
   top: 0;
