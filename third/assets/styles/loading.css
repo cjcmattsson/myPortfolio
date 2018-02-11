@@ -12,16 +12,17 @@
   background-color: black;
   z-index: 1000000;
   transition: all 0.3s ease-out;
+  overflow: hidden;
 }
-.loader {
-    border: 16px solid #f3f3f3; /* Light grey */
-    border-top: 16px solid rgba(72, 87, 230, 1); /* Blue */
+/* .loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid rgba(72, 87, 230, 1);
     border-radius: 50%;
     width: 120px;
     height: 120px;
     animation: spin 2s linear infinite;
     transition: all 0.3s ease-out;
-}
+} */
 
 .hide-loading {
   opacity: 0;
@@ -37,4 +38,116 @@
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+/* PACMAN */
+
+
+
+.pacman {
+  position: absolute;
+  height: 100px;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  animation-name: pacman;
+  animation-duration: 4s;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+}
+
+.balls {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+  width: 180px;
+  right: -50px;
+}
+
+.ball {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  margin: 1px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.ball.down {
+  animation-name: down;
+}
+.ball.up {
+  animation-name: up;
+}
+
+.ball.up, .ball.down {
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.head {
+  height: 100px;
+  width: 100px;
+}
+.upper{
+  position: absolute;
+  margin: 0;
+  height: 50px;
+  width: 100px;
+  border-radius: 100px 100px 0px 0px;
+  background-color: white;
+  animation-name: upper;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  transform-origin: 50% 100%;
+}
+
+.lower  {
+  position: absolute;
+  margin: 0;
+  height: 50px;
+  width: 100px;
+  border-radius: 100px 100px 0px 0px;
+  background-color: white;
+  animation-name: lower;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function:linear;
+  transform-origin: 50% 100%;
+}
+
+@keyframes upper {
+  0% { transform: rotate(-30deg); }
+  50% { transform: rotate(0deg); }
+  100% { transform: rotate(-30deg); }
+}
+@keyframes lower {
+  0% { transform: rotate(-150deg); }
+  50% { transform: rotate(-180deg); }
+  100% { transform: rotate(-150deg); }
+}
+
+@keyframes pacman {
+  0% { left: -400px; }
+  100% { left: 120vw; }
+}
+@keyframes up {
+  0% { transform: translateY(3px);}
+  100% { transform: translateY(-3px); }
+}
+@keyframes down {
+  0% { transform: translateY(-3px);}
+  100% { transform: translateY(3px); }
 }
