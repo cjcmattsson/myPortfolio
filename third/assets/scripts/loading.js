@@ -20,7 +20,6 @@ function startLoading() {
 if (sessionStorage.getItem('key') === 'firstVisit') {
   loadingPage.classList.add('remove-loading');
   pacman.classList.add('remove-loading');
-  console.log("hej");
 } else {
   window.onload = startLoading;
 }

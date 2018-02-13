@@ -750,9 +750,22 @@ nav ul li:hover {
   transform: translateY(3px);
 }
 
-.large-project:hover {
-
+.exit-close {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  position: absolute;
+  right: 25px;
+  bottom: 100px;
+  box-shadow: 2.5px 2.5px 0px black;
 }
+
+.exit-close h4 {
+  text-align: center;
+  margin: auto;
+}
+
 /* FOOTER */
 
 footer {

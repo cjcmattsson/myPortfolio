@@ -20,7 +20,7 @@ const home = document.querySelector('#home');
 const work = document.querySelector('#work');
 const about = document.querySelector('#about');
 
-console.log(window.scrollY);
+// console.log(window.scrollY);
 
 scroll.addEventListener('click', () => {
   work.scrollIntoView({
@@ -61,7 +61,7 @@ const sticky = navbar.offsetTop;
 window.addEventListener('scroll', function() {
 
   const top = work.getBoundingClientRect().top;
-  console.log(top);
+  // console.log(top);
 
   if (top <= 430 && !textLanding.classList.contains('hide-landing')) {
     textLanding.classList.add('hide-landing');
@@ -77,6 +77,6 @@ window.addEventListener('scroll', function() {
     scroll.classList.remove('hide-landing');
   }
 
-    console.log(window.scrollY);
+    // console.log(window.scrollY);
 
   });
