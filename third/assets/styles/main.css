@@ -2,6 +2,8 @@ body {
   margin: 0;
 }
 
+
+
 * {
   box-sizing: border-box;
 }
@@ -492,6 +494,12 @@ nav ul li:hover {
   z-index: 10;
 }
 
+
+
+.absolute {
+  position: absolute;
+}
+
 .project:hover .read-more {
   transform: translateY(80px);
   opacity: 1;
@@ -723,6 +731,26 @@ nav ul li:hover {
   border-right: 0;
 }
 
+}
+
+.stop-scroll {
+  overflow: hidden;
+}
+
+.large-project {
+  margin: auto;
+  position: fixed;
+  top: 0; left: 0; bottom: 0; right: 0;
+  width: 90vw;
+  height: 90vh;
+  z-index: 999;
+  -webkit-box-shadow: 0px 0px 0px 0px black;
+  -moz-box-shadow: 0px 0px 0px 0px black;
+  box-shadow: 0px 0px 0px 0px black;
+  transform: translateY(3px);
+}
+
+.large-project:hover {
 
 }
 /* FOOTER */
